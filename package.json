@@ -1,0 +1,28 @@
+{
+  "name": "shex-assemblyscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaxoncreed/shex-assemblyscript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaxoncreed/shex-assemblyscript/issues"
+  },
+  "homepage": "https://github.com/jaxoncreed/shex-assemblyscript#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.14.12"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.14.12"
+  }
+}
